@@ -1,0 +1,38 @@
+{
+  "name": "topology-vue",
+  "version": "1.0.0",
+  "description": "A diagram project uses vue.",
+  "author": "Alsmile",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "element-ui": "^2.4.11",
+    "file-saver": "^2.0.2",
+    "nuxt": "^2.0.0",
+    "cookie-universal-nuxt": "^2.0.19",
+    "topology-activity-diagram": "^0.0.4",
+    "topology-class-diagram": "^0.0.1",
+    "topology-core": "^0.1.9",
+    "topology-flow-diagram": "^0.0.1",
+    "topology-sequence-diagram": "^0.0.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.16.4",
+    "sass-loader": "^8.0.0"
+  }
+}

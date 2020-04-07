@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\assets",
+    "\\components",
+    "\\layouts",
+    "\\middleware",
+    "\\pages",
+    "\\services",
+    "\\store"
+  ],
+  "SelectedNode": "\\layouts\\default.vue",
+  "PreviewInSolutionExplorer": false
+}
