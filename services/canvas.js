@@ -75,20 +75,24 @@ import {
 
 export function canvasRegister() {
   registerNode(
-    'flowData',
     flowData,
     flowDataAnchors,
     flowDataIconRect,
     flowDataTextRect
   )
   registerNode(
-    'flowSubprocess',
     flowSubprocess,
     null,
     flowSubprocessIconRect,
     flowSubprocessTextRect
   )
-  registerNode('flowDb', flowDb, null, flowDbIconRect, flowDbTextRect)
+    registerNode(
+        'flowDb',
+        flowDb,
+        null,
+        flowDbIconRect,
+        flowDbTextRect
+    )
   registerNode(
     'flowDocument',
     flowDocument,

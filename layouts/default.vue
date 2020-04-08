@@ -179,25 +179,12 @@ export default {
         }
       })
     },
-    async getUser() {
-      if (this.$cookies.get('token')) {
-        this.user = await this.$axios.$get('/api/user/profile')
-      }
-    },
-    onLogin() {
-      if (process.client) {
-        location.href = `https://account.le5le.com?cb=${encodeURIComponent(
-          location.href
-        )}`
-      }
-    },
-    onSignOut() {
-      this.$cookies.remove('token')
-      this.user = null
-    }
+  
+  
+  
   },
   created() {
-    this.getUser()
+    
   }
 }
 </script>

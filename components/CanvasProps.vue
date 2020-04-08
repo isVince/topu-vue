@@ -23,59 +23,166 @@
     </div>
     <!-- 选中节点 -->
     <div v-if="props.node">
-      <div class="title">位置和大小</div>
+      <div class="title">行为</div>
       <div class="items">
         <div class="flex grid">
-          <div>X（px）</div>
-          <div class="ml5">Y（px）</div>
+          <div>锁定</div>
         </div>
         <div class="flex grid">
-          <div>
-            <el-input-number
-              v-model="props.node.rect.x"
-              controls-position="right"
-              @change="onChange"
-            ></el-input-number>
-          </div>
-          <div class="ml5">
-            <el-input-number
-              v-model="props.node.rect.y"
-              controls-position="right"
-              @change="onChange"
-            ></el-input-number>
-          </div>
+          <el-radio-group v-model="radio">
+            <el-radio :label="0">是</el-radio>
+            <el-radio :label="1">否</el-radio>
+          </el-radio-group>
         </div>
       </div>
+      <div class="title">基本</div>
       <div class="items">
         <div class="flex grid">
-          <div>宽（px）</div>
-          <div class="ml5">高（px）</div>
+          厂站名缩写：
+          <el-input size="mini" v-model="input1"></el-input>
         </div>
         <div class="flex grid">
-          <div>
-            <el-input-number
-              v-model="props.node.rect.width"
-              controls-position="right"
-              @change="onChange"
-            ></el-input-number>
+          电压等级：
+          <el-input size="mini" v-model="input1"></el-input>
+        </div>
+        <div class="flex grid">
+          上级单元：
+          <el-input size="mini" v-model="input1"></el-input>
+        </div>
+        <div class="flex grid">
+          设备简称：
+          <el-input size="mini" v-model="input1"></el-input>
+        </div>
+        <div class="flex grid">
+          设备说明：
+          <el-input size="mini" v-model="input1"></el-input>
+        </div>
+      </div>
+      <!--<div class="title">设备标签</div>
+      <div class="items">
+        <div class="flex grid">
+          标签颜色
+        </div>
+      </div>-->
+        <div class="title">数据</div>
+        <div class="items">
+          <div class="flex grid">
+            当前状态：
+            <el-select size="mini" v-model="value" placeholder="请选择">
+              <el-option v-for="item in options"
+                         :key="item.value"
+                         :label="item.label"
+                         :value="item.value">
+              </el-option>
+            </el-select>
           </div>
-          <div class="ml5">
-            <el-input-number
-              v-model="props.node.rect.height"
-              controls-position="right"
-              @change="onChange"
-            ></el-input-number>
+        </div>
+        <div class="title">位置和大小</div>
+        <div class="items">
+          <div class="flex grid">
+            <div>X（px）</div>
+            <div class="ml5">Y（px）</div>
+          </div>
+          <div class="flex grid">
+            <div>
+              <el-input-number v-model="props.node.rect.x"
+                               controls-position="right"
+                               @change="onChange"></el-input-number>
+            </div>
+            <div class="ml5">
+              <el-input-number v-model="props.node.rect.y"
+                               controls-position="right"
+                               @change="onChange"></el-input-number>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="flex grid">
+            <div>宽（px）</div>
+            <div class="ml5">高（px）</div>
+          </div>
+          <div class="flex grid">
+            <div>
+              <el-input-number v-model="props.node.rect.width"
+                               controls-position="right"
+                               @change="onChange"></el-input-number>
+            </div>
+            <div class="ml5">
+              <el-input-number v-model="props.node.rect.height"
+                               controls-position="right"
+                               @change="onChange"></el-input-number>
+            </div>
+          </div>
+        </div>
+        <div class="title">杂项</div>
+        <div class="items">
+          <div class="flex grid">
+            变量名：
+            <el-input size="mini" v-model="input1"></el-input>
+          </div>
+          <div class="flex grid">
+            参与拓扑：
+            <el-select size="mini" v-model="value" placeholder="请选择">
+              <el-option v-for="item in options"
+                         :key="item.value"
+                         :label="item.label"
+                         :value="item.value">
+              </el-option>
+            </el-select>
+          </div>
+          <div class="flex grid">
+            是否投运：
+            <el-select size="mini" v-model="value" placeholder="请选择">
+              <el-option v-for="item in options"
+                         :key="item.value"
+                         :label="item.label"
+                         :value="item.value">
+              </el-option>
+            </el-select>
+          </div>
+          <div class="flex grid">
+            引用：
+            <el-select size="mini" v-model="value" placeholder="请选择">
+              <el-option v-for="item in options"
+                         :key="item.value"
+                         :label="item.label"
+                         :value="item.value">
+              </el-option>
+            </el-select>
+          </div>
+          <div class="flex grid">
+            子类型：
+            <el-input size="mini" v-model="input1"></el-input>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script >
 export default {
   data() {
-    return {}
+    return {
+      radio: 1,
+      options: [{
+          value: '选项1',
+          label: '黄金糕'
+        }, {
+          value: '选项2',
+          label: '双皮奶'
+        }, {
+          value: '选项3',
+          label: '蚵仔煎'
+        }, {
+          value: '选项4',
+          label: '龙须面'
+        }, {
+          value: '选项5',
+          label: '北京烤鸭'
+        }],
+      input1: "",
+        value:''
+    }
   },
   props: {
     props: {
@@ -85,6 +192,7 @@ export default {
   },
   methods: {
     onChange(value) {
+      console.log(this.props);
       this.$emit('change', this.props.node)
     }
   }

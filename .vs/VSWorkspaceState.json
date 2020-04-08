@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\components",
     "\\layouts",
+    "\\libs",
+    "\\libs\\flow-station",
     "\\middleware",
     "\\pages",
+    "\\plugins",
     "\\services",
+    "\\static",
     "\\store"
   ],
-  "SelectedNode": "\\layouts\\default.vue",
+  "SelectedNode": "\\libs\\station",
   "PreviewInSolutionExplorer": false
 }
