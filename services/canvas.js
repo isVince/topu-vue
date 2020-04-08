@@ -63,6 +63,9 @@ import {
   interfaceClassTextRect
 } from 'topology-class-diagram'
 import {
+    flowStation, flowStationAnchors, flowStationIconRect, flowStationTextRect
+} from '~~==/libs/flow-station' 
+import {
   lifeline,
   lifelineAnchors,
   lifelineIconRect,
@@ -79,6 +82,13 @@ export function canvasRegister() {
     flowDataAnchors,
     flowDataIconRect,
     flowDataTextRect
+  )
+    registerNode(
+        'flowStation',
+        flowStation,
+        flowStationAnchors,
+        flowStationIconRect,
+        flowStationTextRect
   )
   registerNode(
     flowSubprocess,
