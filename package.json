@@ -24,6 +24,7 @@
     "topology-sequence-diagram": "^0.0.4"
   },
   "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.2",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
@@ -34,5 +35,16 @@
     "node-sass": "^4.13.0",
     "prettier": "^1.16.4",
     "sass-loader": "^8.0.0"
-  }
+  },
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isVince/topu-vue.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isVince/topu-vue/issues"
+  },
+  "homepage": "https://github.com/isVince/topu-vue#readme"
 }

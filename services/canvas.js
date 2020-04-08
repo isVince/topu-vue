@@ -64,7 +64,7 @@ import {
 } from 'topology-class-diagram'
 import {
     flowStation, flowStationAnchors, flowStationIconRect, flowStationTextRect
-} from '~~==/libs/flow-station' 
+} from '@/libs/flow-station' 
 import {
   lifeline,
   lifelineAnchors,
@@ -916,5 +916,22 @@ export const Tools = [
         }
       }
     ]
-  }
+    },
+    {
+        group: '自定义',
+        children: [
+            {
+                name: 'flowStation',
+                icon: 'icon-lifeline',
+                data: {
+                    text: '鬼鬼鬼',
+                    rect: {
+                        width: 150,
+                        height: 400
+                    },
+                    name: 'lifeline'
+                }
+            }
+        ]
+    }
 ]
