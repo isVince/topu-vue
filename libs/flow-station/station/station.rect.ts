@@ -8,7 +8,7 @@ export function flowStationIconRect(node: Node) {
 export function flowStationTextRect(node: Node) {
     node.textRect = new Rect(
         node.rect.x + node.rect.width / 7,
-        node.rect.y,
+        node.rect.y + (node.rect.height * 2),
         (node.rect.width * 5) / 7,
         node.rect.height
     );

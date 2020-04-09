@@ -924,10 +924,10 @@ export const Tools = [
                 name: 'flowStation',
                 icon: 'icon-lifeline',
                 data: {
-                    text: '鬼鬼鬼',
+                    text: '测试图形',
                     rect: {
                         width: 150,
-                        height: 400
+                        height: 150
                     },
                     name: 'lifeline'
                 }
