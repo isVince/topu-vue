@@ -275,6 +275,7 @@
 
         //also add a group child. the svg element can't use the transform attribute
         this.__currentElement = this.__document.createElementNS("http://www.w3.org/2000/svg", "g");
+        this.__currentElement.setAttribute("id", `node_${Math.ceil(Math.random() * 1000)}`);
         this.__root.appendChild(this.__currentElement);
     };
 
@@ -290,6 +291,7 @@
 
         var element = this.__document.createElementNS("http://www.w3.org/2000/svg", elementName),
             keys = Object.keys(properties), i, key;
+        element.setAttribute("id", `node_${Math.ceil(Math.random() * 1000)}`);
         if (resetFill) {
             //if fill or stroke is not specified, the svg element should not display. By default SVG's fill is black.
             element.setAttribute("fill", "none");

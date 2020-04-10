@@ -3,6 +3,7 @@ import { Rect } from 'topology-core/models/rect';
 
 export function flowStationIconRect(node: Node) {
     node.iconRect = new Rect(0, 0, 0, 0);
+    console.log(node);
 }
 
 export function flowStationTextRect(node: Node) {

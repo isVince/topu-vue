@@ -90,7 +90,7 @@ export default {
       }
     }
   },
-  mounted() {
+    mounted() {
     this.canvasOptions.on = this.onMessage
     this.canvas = new Topology('topology-canvas', this.canvasOptions)
     this.open()
@@ -104,6 +104,7 @@ export default {
         '/api/topology/' + this.$route.query.id
       )
       if (data && data.id) {
+        console.log(data);
         this.canvas.open(data.data)
       }
     },
@@ -113,7 +114,7 @@ export default {
     },
 
     onMessage(event, data) {
-      // console.log('onMessage:', event, data)
+       //console.log('onMessage:', event, data)
       switch (event) {
         case 'node':
         case 'addNode':
@@ -270,6 +271,7 @@ export default {
     },
 
     handle_saveSvg(data) {
+      debugger;
       const ctx = new C2S(
         this.canvas.canvas.width + 200,
         this.canvas.canvas.height + 200

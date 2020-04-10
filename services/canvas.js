@@ -925,11 +925,12 @@ export const Tools = [
                 icon: 'icon-lifeline',
                 data: {
                     text: '测试图形',
+                    stationName: 'Test储能站',
                     rect: {
                         width: 150,
                         height: 150
                     },
-                    name: 'lifeline'
+                    name: 'lifeline',
                 }
             }
         ]

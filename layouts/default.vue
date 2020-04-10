@@ -4,12 +4,14 @@
     <div class="headers">
       <el-menu mode="horizontal" @select="onMenu" background-color="#f8f8f8">
         <!--<el-menu-item class="logo">
-          <nuxt-link to="/">
-            <img src="/favicon.ico" />
-          </nuxt-link>
-        </el-menu-item>-->
+      <nuxt-link to="/">
+        <img src="/favicon.ico" />
+      </nuxt-link>
+    </el-menu-item>-->
         <el-submenu index="file">
-          <template slot="title">文件</template>
+          <template slot="title">
+            文件
+          </template>
           <el-menu-item index="new">新建文件</el-menu-item>
           <el-menu-item index="open">打开本地文件（新建）</el-menu-item>
           <el-menu-item index="replace">导入本地文件...</el-menu-item>
@@ -19,7 +21,9 @@
           <el-menu-item index="saveSvg">下载为SVG</el-menu-item>
         </el-submenu>
         <el-submenu index="edit">
-          <template slot="title">编辑</template>
+          <template slot="title">
+            编辑
+          </template>
           <el-menu-item index="undo">撤消</el-menu-item>
           <el-menu-item index="redo">重做</el-menu-item>
           <el-menu-item class="separator"></el-menu-item>
@@ -29,18 +33,24 @@
         </el-submenu>
       </el-menu>
       <el-menu mode="horizontal" class="full" background-color="#f8f8f8"></el-menu>
+      <!--<el-menu mode="horizontal" background-color="#f8f8f8">
+        <el-menu-item>锁定：
+            <el-switch v-model="value"
+               active-color="#13ce66"
+               inactive-color="#ff4949">
+            </el-switch>
+        </el-menu-item>
+      </el-menu>-->
       <el-menu mode="horizontal" background-color="#f8f8f8">
         <el-menu-item>视图：{{scale}}%</el-menu-item>
         <el-submenu index="state" title="默认连线类型">
           <template slot="title">
             <i :class="`iconfont icon-${lineName}`"></i>
           </template>
-          <el-menu-item
-            v-for="(item, index) in lineNames"
-            :key="index"
-            :index="`line-${item}`"
-            @click="onState('lineName', item)"
-          >
+          <el-menu-item v-for="(item, index) in lineNames"
+                        :key="index"
+                        :index="`line-${item}`"
+                        @click="onState('lineName', item)">
             <i :class="`iconfont icon-${item}`"></i>
           </el-menu-item>
         </el-submenu>
@@ -50,12 +60,10 @@
           <template slot="title">
             <i :class="`iconfont icon-from-${fromArrowType}`"></i>
           </template>
-          <el-menu-item
-            v-for="(item, index) in arrowTypes"
-            :key="index"
-            :index="`fromArrow-${item}`"
-            @click="onState('fromArrowType', item)"
-          >
+          <el-menu-item v-for="(item, index) in arrowTypes"
+                        :key="index"
+                        :index="`fromArrow-${item}`"
+                        @click="onState('fromArrowType', item)">
             <i :class="`iconfont icon-from-${item}`"></i>
           </el-menu-item>
         </el-submenu>
@@ -65,12 +73,10 @@
           <template slot="title">
             <i :class="`iconfont icon-to-${toArrowType}`"></i>
           </template>
-          <el-menu-item
-            v-for="(item, index) in arrowTypes"
-            :key="index"
-            :index="`toArrow-${item}`"
-            @click="onState('toArrowType', item)"
-          >
+          <el-menu-item v-for="(item, index) in arrowTypes"
+                        :key="index"
+                        :index="`toArrow-${item}`"
+                        @click="onState('toArrowType', item)">
             <i :class="`iconfont icon-to-${item}`"></i>
           </el-menu-item>
         </el-submenu>
@@ -86,7 +92,6 @@
 
 <script >
 import '~/assets/css/base.scss'
-
 export default {
   data() {
     return {
@@ -184,7 +189,6 @@ export default {
   
   },
   created() {
-    
   }
 }
 </script>
