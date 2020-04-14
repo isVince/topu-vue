@@ -224,8 +224,8 @@ export const Tools = [
           paddingTop: 10,
           paddingBottom: 10,
           name: 'rectangle',
-          icon: '\ue64d',
-          iconFamily: 'topology',
+          icon: '\ue604',
+          iconFamily: 'iconfont',
           iconColor: '#2f54eb'
         }
       },

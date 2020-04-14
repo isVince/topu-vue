@@ -271,7 +271,6 @@ export default {
     },
 
     handle_saveSvg(data) {
-      debugger;
       const ctx = new C2S(
         this.canvas.canvas.width + 200,
         this.canvas.canvas.height + 200
@@ -290,8 +289,8 @@ export default {
         `<defs>
     <style type="text/css">
       @font-face {
-        font-family: 'topology';
-        src: url('http://at.alicdn.com/t/font_1331132_h688rvffmbc.ttf?t=1569311680797') format('truetype');
+        font-family: 'iconfont';
+        src: url('http://at.alicdn.com/t/font_1725297_ebrqfs17ky.ttf')format('truetype');
       }
     </style>
   </defs>`
