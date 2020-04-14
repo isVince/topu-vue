@@ -290,7 +290,7 @@ export default {
     <style type="text/css">
       @font-face {
         font-family: 'iconfont';
-        src: url('http://at.alicdn.com/t/font_1725297_ebrqfs17ky.ttf')format('truetype');
+        src: url('http://at.alicdn.com/t/font_1725297_4bvzqw8f05d.ttf') format('truetype');
       }
     </style>
   </defs>`
