@@ -19,12 +19,16 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: '//at.alicdn.com/t/font_1725297_4bvzqw8f05d.css'
+        href: '//at.alicdn.com/t/font_1113798_0532l8oa6jqp.css'
       },
-      //{
-      //  rel: 'stylesheet',
-      //  href: '//at.alicdn.com/t/font_1331132_5lvbai88wkb.css'
-      //}
+      {
+        rel: 'stylesheet',
+        href: '//at.alicdn.com/t/font_1331132_5lvbai88wkb.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '//at.alicdn.com/t/font_1725297_4bvzqw8f05d.css'
+        }
     ]
   },
   /*
