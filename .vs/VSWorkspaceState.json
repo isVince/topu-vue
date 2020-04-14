@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\css",
     "\\components",
-    "\\layouts",
     "\\libs",
-    "\\middleware",
-    "\\pages",
-    "\\plugins",
+    "\\libs\\flow-station",
+    "\\libs\\flow-station\\station",
     "\\services",
-    "\\static\\js"
+    "\\static",
+    "\\static\\img"
   ],
-  "SelectedNode": "\\libs\\flow-station\\station\\station.rect.ts",
+  "SelectedNode": "\\pages\\workspace.vue",
   "PreviewInSolutionExplorer": false
 }
