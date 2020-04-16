@@ -235,7 +235,9 @@ export default {
 
 .items {
   padding: 0.05rem 0.15rem;
-
+  >div{
+        margin:0.05rem 0;
+  }
   .el-input-number {
     width: initial;
     line-height: 0.32rem;

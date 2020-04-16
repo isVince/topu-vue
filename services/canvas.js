@@ -27,7 +27,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue609',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
             {
@@ -43,7 +43,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue60a',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
             {
@@ -59,7 +59,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue610',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
             {
@@ -75,7 +75,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue60e',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
             {
@@ -91,7 +91,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue604',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
         ]
@@ -112,7 +112,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue605',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
             {
@@ -128,7 +128,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue60d',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
             {
@@ -144,7 +144,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue611',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
             {
@@ -160,7 +160,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue602',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
             {
@@ -176,7 +176,7 @@ export const Tools = [
                     name: 'flowStation',
                     icon: '\ue607',
                     iconFamily: 'iconfont',
-                    iconColor: '#2f54eb'
+                    iconColor: '#12E1FF'
                 }
             },
         ]

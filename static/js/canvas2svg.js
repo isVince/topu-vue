@@ -497,14 +497,23 @@
         //if the current element has siblings, add another group
       var parent = this.__closestGroupOrSvg();
         if (parent.childNodes.length > 0) {
-        	if (this.__currentElement.nodeName === "path") {
+            //console.log(parent.previousElementSibling.getAttribute("d"));
+            if (this.__currentElement.nodeName === "path") {
         		if (!this.__currentElementsToStyle) this.__currentElementsToStyle = {element: parent, children: []};
         		this.__currentElementsToStyle.children.push(this.__currentElement)
         		this.__applyCurrentDefaultPath();
         	}
 
             var group = this.__createElement("g");
+
+            var animationE = this.__createElement("animateMotion");
+            animationE.setAttribute("path", parent.previousElementSibling.getAttribute("d"));
+            animationE.setAttribute("rotate", "auto");
+            animationE.setAttribute("begin", "0s");
+            animationE.setAttribute("dur", "3s");
+            animationE.setAttribute("repeatCount", "indefinite");
             parent.appendChild(group);
+            parent.appendChild(animationE);
             this.__currentElement = group;
         }
 
@@ -515,7 +524,8 @@
             transform = "";
         }
         transform += t;
-        this.__currentElement.setAttribute("transform", transform);
+
+        //this.__currentElement.setAttribute("transform", transform);
     };
 
     /**
@@ -574,7 +584,12 @@
     ctx.prototype.__applyCurrentDefaultPath = function () {
     	var currentElement = this.__currentElement;
         if (currentElement.nodeName === "path") {
-			currentElement.setAttribute("d", this.__currentDefaultPath);
+            if (currentElement.getAttribute("stroke") === "") {
+                currentElement.setAttribute("d", "M10 15 L9 7 L17 10 Z");
+            } else {
+                console.log(this.__currentDefaultPath);
+                currentElement.setAttribute("d", this.__currentDefaultPath);
+            }
         } else {
 			console.error("Attempted to apply path command to node", currentElement.nodeName);
         }

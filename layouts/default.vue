@@ -55,7 +55,7 @@
           </el-menu-item>
         </el-submenu>
       </el-menu>
-      <el-menu mode="horizontal" background-color="#f8f8f8">
+      <!--<el-menu mode="horizontal" background-color="#f8f8f8">
         <el-submenu index="state" title="默认起点箭头">
           <template slot="title">
             <i :class="`iconfont icon-from-${fromArrowType}`"></i>
@@ -67,18 +67,21 @@
             <i :class="`iconfont icon-from-${item}`"></i>
           </el-menu-item>
         </el-submenu>
-      </el-menu>
+      </el-menu>-->
       <el-menu mode="horizontal" background-color="#f8f8f8">
         <el-submenu index="state" title="默认终点箭头">
           <template slot="title">
             <i :class="`iconfont icon-to-${toArrowType}`"></i>
           </template>
-          <el-menu-item v-for="(item, index) in arrowTypes"
+          <el-menu-item >
+            <i :class="`iconfont icon-to-${toArrowType}`"></i>
+          </el-menu-item>
+          <!--<el-menu-item v-for="(item, index) in arrowTypes"
                         :key="index"
                         :index="`toArrow-${item}`"
                         @click="onState('toArrowType', item)">
             <i :class="`iconfont icon-to-${item}`"></i>
-          </el-menu-item>
+          </el-menu-item>-->
         </el-submenu>
       </el-menu>
     </div>
